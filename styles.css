@@ -1,0 +1,114 @@
+/* Базові налаштування */
+body {
+    background: linear-gradient(135deg, #fff0f5 0%, #ffe4e1 100%);
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    transition: all 0.4s ease;
+}
+
+.header-controls { width: 100%; max-width: 850px; text-align: right; margin-bottom: 15px; }
+
+.pink-btn {
+    background-color: #ff3385;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(255, 51, 133, 0.3);
+    transition: 0.3s;
+}
+.pink-btn:hover { transform: scale(1.05); background-color: #e62e77; }
+
+/* Картка резюме */
+.cv-card {
+    display: flex;
+    width: 100%;
+    max-width: 850px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(255, 182, 193, 0.4);
+    margin-bottom: 30px;
+}
+
+.sidebar {
+    background-color: #2d0a1a; /* Глибокий винний */
+    color: #ffd1dc;
+    width: 35%;
+    padding: 40px 30px;
+}
+
+#user-name { color: white; font-size: 26px; margin: 0; }
+.tagline { color: #ff3385; font-weight: bold; margin-top: 5px; margin-bottom: 40px; }
+
+.contact-section p { font-size: 13px; margin: 12px 0; border-bottom: 1px solid #3d1426; padding-bottom: 8px; }
+.contact-section a { color: white; text-decoration: none; }
+
+.sidebar h2 { font-size: 18px; margin-top: 40px; color: white; text-transform: uppercase; letter-spacing: 1px; }
+.pink-dots { padding-left: 20px; font-size: 14px; line-height: 2; }
+
+/* Основний контент */
+.content { width: 65%; padding: 50px; }
+.info-block h2 { color: #2d0a1a; margin: 0; font-size: 22px; }
+.pink-line { width: 50px; height: 4px; background: #ff3385; margin: 10px 0 20px; border-radius: 2px; }
+.info-block p { color: #555; line-height: 1.7; font-size: 15px; }
+.sub-text { color: #ff3385; font-weight: bold; font-size: 13px; margin: 0; }
+
+/* Коментарі */
+.comments-area { width: 100%; max-width: 850px; }
+.comments-area h2 { color: #2d0a1a; font-size: 20px; }
+
+.comment-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-left: 5px solid #ff3385;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+}
+.c-email { font-weight: bold; color: #2d0a1a; margin-bottom: 8px; font-size: 14px; }
+.c-text { color: #666; font-size: 14px; font-style: italic; }
+
+/* Футер */
+#footer-storage { margin-top: 30px; font-size: 11px; color: #b08d9b; }
+
+/* Модалка */
+.modal {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(45, 10, 26, 0.8);
+    display: flex; justify-content: center; align-items: center; z-index: 9999;
+}
+.modal.hidden { display: none; }
+
+.modal-box {
+    background: white; padding: 35px; border-radius: 20px; width: 90%; max-width: 400px;
+}
+.modal-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; }
+.modal-top h2 { margin: 0; color: #2d0a1a; font-size: 20px; }
+.close-modal { color: #ff3385; font-weight: bold; cursor: pointer; }
+
+.pink-form { display: flex; flex-direction: column; gap: 15px; }
+.pink-form input, .pink-form textarea {
+    padding: 12px; border: 2px solid #fff0f5; border-radius: 10px; background: #fffafa;
+}
+.submit-pink {
+    background: #2d0a1a; color: white; border: none; padding: 15px; border-radius: 10px;
+    font-weight: bold; cursor: pointer; transition: 0.3s;
+}
+.submit-pink:hover { background: #ff3385; }
+
+/* --- НІЧНА ТЕМА --- */
+body.dark-theme { background: #1a050d; }
+body.dark-theme .cv-card { background: #250a16; box-shadow: 0 20px 40px rgba(0,0,0,0.5); }
+body.dark-theme .content { background: #250a16; }
+body.dark-theme .info-block h2, body.dark-theme .c-email { color: #ffd1dc; }
+body.dark-theme .info-block p, body.dark-theme .c-text { color: #b08d9b; }
+body.dark-theme .comment-card { background: #2d0a1a; border-color: #ff3385; }
+body.dark-theme .modal-box { background: #250a16; color: white; }

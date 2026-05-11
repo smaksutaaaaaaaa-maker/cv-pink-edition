@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maksiuta CV — Pink Edition</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    
+    <div class="header-controls">
+        <button id="theme-toggle" class="pink-btn">Змінити вайб (Тему)</button>
+    </div>
+
+    <div class="main-wrapper">
+        <div class="cv-card">
+            <aside class="sidebar">
+                <div class="profile-header">
+                    <h1 id="user-name">Maksiuta Oleksandra</h1>
+                    <p class="tagline">Information security specialist</p>
+                </div>
+
+                <div class="contact-section">
+                    <p><strong>Phone:</strong> +380 (XX) XXX-XX-XX</p>
+                    <p><strong>Email:</strong> <a href="mailto:smaksutaaaaaaaa@email.com">smaksutaaaaaaaa@email.com</a></p>
+                    <p><strong>City:</strong> Lviv, UA</p>
+                </div>
+
+                <div class="skills-section">
+                    <h2>Навички</h2>
+                    <ul class="pink-dots">
+                        <li>Python (Base)</li>
+                        <li>Cybersecurity</li>
+                        <li>Crypto Hardware</li>
+                        <li>HTML5 & CSS3</li>
+                        <li>Git / Terminal</li>
+                    </ul>
+                </div>
+            </aside>
+
+            <main class="content">
+                <section class="info-block">
+                    <h2>Про мене</h2>
+                    <div class="pink-line"></div>
+                    <p>Я початківець у сфері кібербезпеки, вивчаю захист комп'ютерних систем і мереж, розвиваю навички аналізу загроз та виявлення вразливостей.</p>
+                </section>
+
+                <section class="info-block">
+                    <h2>Освіта</h2>
+                    <div class="pink-line"></div>
+                    <h3>НУ "Львівська політехніка"</h3>
+                    <p class="sub-text">2 курс (2023 — 2027)</p>
+                    <p>Спеціальність: <strong>Кібербезпека</strong></p>
+                </section>
+            </main>
+        </div>
+
+        <section class="comments-area">
+            <h2>Відгуки роботодавців</h2>
+            <div id="comments-list"></div>
+        </section>
+    </div>
+
+    <footer id="footer-storage"></footer>
+
+    <div id="feedback-modal" class="modal hidden">
+        <div class="modal-box">
+            <div class="modal-top">
+                <h2>Зворотний зв'язок</h2>
+                <span class="close-modal">× Закрити</span>
+            </div>
+            <form action="https://formspree.io/f/mzdokwdb" method="POST" class="pink-form">
+                <input type="text" name="name" placeholder="Твоє ім'я" required>
+                <input type="email" name="email" placeholder="Твій Email" required>
+                <input type="tel" name="phone" placeholder="Номер телефону">
+                <textarea name="message" placeholder="Напиши щось цікаве..." required></textarea>
+                <button type="submit" class="submit-pink">Надіслати месидж</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
